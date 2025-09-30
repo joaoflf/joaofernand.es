@@ -1,23 +1,23 @@
 [
   {
-    "name": "Gemma COCO Finetune",
-    "url": "https://github.com/joaoflf/gemma-coco-finetune",
-    "description": "Finetune Gemma3 for pose estimation using the COCO dataset"
-  },
-  {
     "name": "Vigil",
     "url": "https://github.com/joaoflf/vigil",
     "description": "Real-time traffic accident detection system"
   },
   {
-    "name": "Verne Decoder Transformer",
-    "url": "https://github.com/joaoflf/verne-decoder-transformer",
-    "description": "Decoder transformer implementation from scratch to generate text based on Jules Verne works"
-  },
-  {
     "name": "Cauchy",
     "url": "https://github.com/joaoflf/cauchy",
     "description": "Distributed key-value store with LSMTree storage engine"
+  },
+  {
+    "name": "Gemma COCO Finetune",
+    "url": "https://github.com/joaoflf/gemma-coco-finetune",
+    "description": "Finetune Gemma3 for pose estimation using the COCO dataset"
+  },
+  {
+    "name": "Verne Decoder Transformer",
+    "url": "https://github.com/joaoflf/verne-decoder-transformer",
+    "description": "Decoder transformer implementation from scratch to generate text based on Jules Verne works"
   },
   {
     "name": "Galois",
@@ -33,10 +33,6 @@
     "name": "ResNet PyTorch",
     "url": "https://github.com/joaoflf/resnet-pytorch",
     "description": "ResNet implementation using PyTorch"
-  },
-  {
-    "name": "Remote Config Dashboard",
-    "url": "https://github.com/joaoflf/remote-config-dashboard",
-    "description": "Web dashboard to manage feature toggles and config properties"
   }
 ]
+
