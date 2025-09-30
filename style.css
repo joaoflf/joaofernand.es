@@ -28,52 +28,7 @@ header {
     margin-top: 5rem;
     margin-bottom: 2rem;
     grid-column: 2;
-}
-
-/* Header Style 1: Bold Large */
-.header-1 {
-    font-size: 1.8em;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-}
-
-/* Header Style 2: Minimal Monospace */
-.header-2 {
-    font-family: 'Monaco', 'Menlo', monospace;
-    font-size: 0.9em;
-    color: var(--foreground-color-2);
-}
-
-/* Header Style 3: Italic Elegant */
-.header-3 {
-    font-style: italic;
-    font-weight: 300;
-    font-size: 1.2em;
-    color: var(--foreground-color-2);
-}
-
-/* Header Style 4: All Caps with Spacing */
-.header-4 {
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-weight: 400;
-    font-size: 0.8em;
-}
-
-/* Header Style 5: Subtle with Border */
-.header-5 {
-    font-weight: 200;
-    color: var(--foreground-color-2);
-    border-bottom: 1px solid var(--underline-color);
-    padding-bottom: 0.5rem;
-}
-
-/* Header Style 6: Left-aligned Contrast */
-.header-6 {
-    text-align: left;
-    grid-column: 4;
-    font-size: 1.5em;
-    font-weight: 600;
+    font-size: 15pt;
 }
 
 .about,
