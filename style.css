@@ -1,80 +1,129 @@
-/* CSS Reset from https://piccalil.li/blog/a-more-modern-css-reset/ */
+@import url('reset.css');
 
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* Prevent font size inflation */
 html {
-  -moz-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  text-size-adjust: none;
+    font-size: 12pt;
 }
 
-/* Remove default margin in favour of better control in authored CSS */
-body, h1, h2, h3, h4, p,
-figure, blockquote, dl, dd {
-  margin-block-end: 0;
+:root {
+    --font: 'Public Sans', sans-serif;
+    --background-color: #f6f6f6;
+    --foreground-color-1: #111;
+    --foreground-color-2: #111a;
+    --foreground-color-3: #1116;
+    --underline-color: #1114;
 }
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
-  list-style: none;
-}
-
-/* Set core body defaults */
 body {
-  min-height: 100vh;
-  line-height: 1.5;
+    font-family: var(--font);
+    color: var(--foreground-color-1);
+    background: var(--background-color);
+    display: grid;
+    grid-template-columns: 1.2fr 150px 100px 1.5fr 1.2fr;
+    grid-auto-rows: min-content;
+    row-gap: 3rem;
 }
 
-/* Set shorter line heights on headings and interactive elements */
-h1, h2, h3, h4,
-button, input, label {
-  line-height: 1.1;
+header {
+    text-align: right;
+    margin-top: 5rem;
+    grid-column: 2;
 }
 
-/* Balance text wrapping on headings */
-h1, h2,
-h3, h4 {
-  text-wrap: balance;
+.about,
+.contact,
+.projects,
+.posts {
+    display: contents;
 }
 
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-  color: currentColor;
+.label {
+    grid-column: 2;
+    text-align: right;
+    color: var(--foreground-color-3);
 }
 
-/* Make images easier to work with */
-img,
-picture {
-  max-width: 100%;
-  display: block;
+.content {
+    grid-column: 4;
+    font-weight: 200;
+    color: var(--foreground-color-1);
 }
 
-/* Inherit fonts for inputs and buttons */
-input, button,
-textarea, select {
-  font-family: inherit;
-  font-size: inherit;
+a {
+    text-decoration-color: var(--underline-color);
+    display: block;
+    margin-bottom: 0.5rem;
+    transition: text-decoration-color 0.2s ease;
 }
 
-/* Make sure textareas without a rows attribute are not tiny */
-textarea:not([rows]) {
-  min-height: 10em;
+a:hover {
+    text-decoration-color: var(--foreground-color-2);
 }
 
-/* Anything that has been anchored to should have extra scroll margin */
-:target {
-  scroll-margin-block: 5ex;
+a:hover .link-arrow {
+    fill: var(--foreground-color-2);
 }
 
-/* Custom styles */
-body {
-  font-family: 'Public Sans', sans-serif;
+.project {
+    margin-bottom: 1.5rem;
+}
+
+.project>a {
+    margin-bottom: 0.3rem;
+}
+
+.project-description {
+    color: var(--foreground-color-2);
+    font-size: 0.9em;
+}
+
+.link-arrow {
+    height: 1em;
+    width: 1em;
+    vertical-align: text-bottom;
+    fill: var(--underline-color);
+    transition: fill 0.2s ease;
+    white-space: nowrap;
+}
+
+footer {
+    grid-column: 1 / -1;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.footer-content {
+    text-align: center;
+    color: var(--foreground-color-3);
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+        row-gap: 2rem;
+    }
+    
+    header {
+        text-align: left;
+        margin-top: 2rem;
+        grid-column: 1;
+    }
+    
+    .label {
+        grid-column: 1;
+        text-align: left;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+    }
+    
+    .content {
+        grid-column: 1;
+        margin-bottom: 1.5rem;
+    }
+    
+    footer {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
 }

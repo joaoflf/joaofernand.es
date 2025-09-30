@@ -1,0 +1,37 @@
+[
+  {
+    "name": "How to grow your engineers through continuous feedback",
+    "url": "https://leaddev.com/team/how-grow-your-engineers-through-continuous-feedback",
+    "description": "Strategies for providing continuous feedback to help engineers grow in their careers"
+  },
+  {
+    "name": "Let's Go",
+    "url": "https://calculatedrandomness.substack.com/p/lets-go",
+    "description": "I guess \"the why\" is a good place to start"
+  },
+  {
+    "name": "Vigil #1 - Kicking things off",
+    "url": "https://calculatedrandomness.substack.com/p/vigil-1-kicking-things-off",
+    "description": "Introducing Vigil: concept, goals and initial architecture for a traffic accident detection system"
+  },
+  {
+    "name": "Vigil #2 - Camera feed extractor",
+    "url": "https://calculatedrandomness.substack.com/p/vigil-2-camera-feed-extractor",
+    "description": "Developing the first piece of Vigil, the real-time traffic accident detection system"
+  },
+  {
+    "name": "Vigil #3 - Zero to one",
+    "url": "https://calculatedrandomness.substack.com/p/vigil-3-zero-to-one",
+    "description": "Getting our first accident detections"
+  },
+  {
+    "name": "Vigil #4 - A detour through video processing",
+    "url": "https://calculatedrandomness.substack.com/p/vigil-4-a-detour-through-video-processing",
+    "description": "Upgrading my frame extraction method"
+  },
+  {
+    "name": "Vigil #5 - The finishing touches",
+    "url": "https://calculatedrandomness.substack.com/p/vigil-5-the-finishing-touches",
+    "description": "Bringing it all together with a Grafana dashboard and parallel data streams"
+  }
+]

@@ -1,15 +1,119 @@
 <!DOCTYPE html>
+<!--
+  Like to view source? We might get along
+  joaoflfernandes@gmail.com
+-->
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>João Fernandes</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
+<body>
+    <header>João Fernandes</header>
+    <section class="about">
+        <div class="label">About</div>
+        <div class="content">
+            <p>Engineering leader with 14+ years experience, currently Director of Engineering at Five9, technical
+                interests in ML/AI, founded Machine Learning Porto meetup, writes Calculated Randomness blog.</p>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="label">Contact</div>
+        <div class="content">
+            <a href="mailto:joaoflfernandes@gmail.com">
+                <span class="link">
+                    joaoflfernandes@gmail.com
+                </span>
+            </a>
+            <a href="https://github.com/joaoflf" target="_blank">
+                <span class="link">
+                    Github
+                </span>
+                <svg aria-label="Open in new tab" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    viewBox="0 0 256 256" fill="currentColor" class="link-arrow">
+                    <path
+                        d="M76 88c-6.627 0-12-5.373-12-12s5.373-12 12-12h104c6.627 0 12 5.373 12 12v104c0 6.627-5.373 12-12 12s-12-5.373-12-12v-75.029l-83.515 83.514c-4.686 4.687-12.284 4.687-16.97 0-4.687-4.686-4.687-12.284 0-16.97L151.029 88H76Z">
+                    </path>
+                </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/joaoflf/" target="_blank">
+                <span class="link">
+                    LinkedIn
+                </span>
+                <svg aria-label="Open in new tab" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    viewBox="0 0 256 256" fill="currentColor" class="link-arrow">
+                    <path
+                        d="M76 88c-6.627 0-12-5.373-12-12s5.373-12 12-12h104c6.627 0 12 5.373 12 12v104c0 6.627-5.373 12-12 12s-12-5.373-12-12v-75.029l-83.515 83.514c-4.686 4.687-12.284 4.687-16.97 0-4.687-4.686-4.687-12.284 0-16.97L151.029 88H76Z">
+                    </path>
+                </svg>
+            </a>
+            <a href="https://calculatedrandomness.substack.com/" target="_blank">
+                <span class="link">
+                    Substack
+                </span>
+                <svg aria-label="Open in new tab" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    viewBox="0 0 256 256" fill="currentColor" class="link-arrow">
+                    <path
+                        d="M76 88c-6.627 0-12-5.373-12-12s5.373-12 12-12h104c6.627 0 12 5.373 12 12v104c0 6.627-5.373 12-12 12s-12-5.373-12-12v-75.029l-83.515 83.514c-4.686 4.687-12.284 4.687-16.97 0-4.687-4.686-4.687-12.284 0-16.97L151.029 88H76Z">
+                    </path>
+                </svg>
+            </a>
+        </div>
+    </section>
+    <section class="projects">
+        <div class="label">Projects</div>
+        <div class="content" id="projects-container"></div>
+    </section>
+    <section class="posts">
+        <div class="label">Writing</div>
+        <div class="content" id="posts-container"></div>
+    </section>
+    <footer>
+        <div class="footer-content">bye, thanks for visiting</div>
+    </footer>
+    <script>
+        fetch('projects.json')
+            .then(r => r.json())
+            .then(projects => {
+                const container = document.getElementById('projects-container');
+                container.innerHTML = projects.map(project => `
+                    <div class="project">
+                        <a href="${project.url}" target="_blank">
+                            <span class="link">${project.name}</span>
+                            <svg aria-label="Open in new tab" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 256 256" fill="currentColor" class="link-arrow">
+                                <path d="M76 88c-6.627 0-12-5.373-12-12s5.373-12 12-12h104c6.627 0 12 5.373 12 12v104c0 6.627-5.373 12-12 12s-12-5.373-12-12v-75.029l-83.515 83.514c-4.686 4.687-12.284 4.687-16.97 0-4.687-4.686-4.687-12.284 0-16.97L151.029 88H76Z"></path>
+                            </svg>
+                        </a>
+                        <div class="project-description">${project.description}</div>
+                    </div>
+                `).join('');
+            });
+        
+        fetch('posts.json')
+            .then(r => r.json())
+            .then(posts => {
+                const container = document.getElementById('posts-container');
+                container.innerHTML = posts.map(post => `
+                    <div class="project">
+                        <a href="${post.url}" target="_blank">
+                            <span class="link">${post.name}</span>
+                            <svg aria-label="Open in new tab" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 256 256" fill="currentColor" class="link-arrow">
+                                <path d="M76 88c-6.627 0-12-5.373-12-12s5.373-12 12-12h104c6.627 0 12 5.373 12 12v104c0 6.627-5.373 12-12 12s-12-5.373-12-12v-75.029l-83.515 83.514c-4.686 4.687-12.284 4.687-16.97 0-4.687-4.686-4.687-12.284 0-16.97L151.029 88H76Z"></path>
+                            </svg>
+                        </a>
+                        <div class="project-description">${post.description}</div>
+                    </div>
+                `).join('');
+            });
+    </script>
 </body>
+
 </html>
