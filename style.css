@@ -33,6 +33,7 @@ header {
 
 .about,
 .contact,
+.experience,
 .projects,
 .posts {
     display: contents;
@@ -85,6 +86,61 @@ a:hover .link-arrow {
     fill: var(--underline-color);
     transition: fill 0.2s ease;
     white-space: nowrap;
+}
+
+.experience-entry {
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.experience-entry::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.45em;
+    width: 8px;
+    height: 8px;
+    background-color: var(--foreground-color-3);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.experience-entry:first-child::before {
+    background-color: var(--foreground-color-1);
+}
+
+.experience-entry::after {
+    content: '';
+    position: absolute;
+    left: 3.5px;
+    top: 0.95em;
+    height: calc(100% + 1rem);
+    width: 1px;
+    background-color: var(--foreground-color-3);
+}
+
+.experience-entry:last-child::after {
+    display: none;
+}
+
+.experience-date {
+    color: var(--foreground-color-3);
+    font-size: 0.9em;
+    margin-bottom: 0.3rem;
+}
+
+.experience-entry:first-child .experience-date {
+    color: var(--foreground-color-1);
+}
+
+.experience-title {
+    color: var(--foreground-color-1);
+}
+
+.company {
+    text-decoration: underline;
+    text-decoration-color: var(--underline-color);
 }
 
 footer {

@@ -22,8 +22,12 @@
     <section class="about">
         <div class="label">About</div>
         <div class="content">
-            <p>Engineering leader with 14+ years experience, currently Director of Engineering at Five9, technical
-                interests in ML/AI, founded Machine Learning Porto meetup, writes Calculated Randomness blog.</p>
+            <p>I’m an engineering leader with 14+ years of experience building and scaling software engineering teams
+                and organizations across both startups and enterprises.
+            </p>
+            <p>Beyond growing teams and delivering products, my
+                passions are in Machine Learning and AI, building projects, experimenting with ideas, and writing about
+                them.</p>
         </div>
     </section>
     <section class="contact">
@@ -77,6 +81,35 @@
         <div class="label">Writing</div>
         <div class="content" id="posts-container"></div>
     </section>
+    <section class="experience">
+        <div class="label">Experience</div>
+        <div class="content">
+            <div class="experience-entry">
+                <div class="experience-date">2023 - Present</div>
+                <div class="experience-title">Director of Engineering at <span class="company">Five9</span></div>
+            </div>
+            <div class="experience-entry">
+                <div class="experience-date">2022 - 2023</div>
+                <div class="experience-title">Director of Engineering at <span class="company">GetGround</span></div>
+            </div>
+            <div class="experience-entry">
+                <div class="experience-date">2018 - 2020</div>
+                <div class="experience-title">Director of Engineering at <span class="company">Talkdesk</span></div>
+            </div>
+            <div class="experience-entry">
+                <div class="experience-date">2017 - 2018</div>
+                <div class="experience-title">Engineering Manager at <span class="company">ClearScore</span></div>
+            </div>
+            <div class="experience-entry">
+                <div class="experience-date">2016 - 2017</div>
+                <div class="experience-title">Engineering Manager at <span class="company">Costa Coffee</span></div>
+            </div>
+            <div class="experience-entry">
+                <div class="experience-date">2010 - 2016</div>
+                <div class="experience-title">Other Software Engineering and Engineering Management Roles</div>
+            </div>
+        </div>
+    </section>
     <footer>
         <div class="footer-content">bye, thanks for visiting</div>
     </footer>
@@ -97,7 +130,7 @@
                     </div>
                 `).join('');
             });
-        
+
         fetch('posts.json')
             .then(r => r.json())
             .then(posts => {
