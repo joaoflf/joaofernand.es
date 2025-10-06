@@ -26,98 +26,19 @@ body {
 header {
     text-align: right;
     grid-column: 2;
-    font-size: 15pt;
-    margin-bottom: 1rem;
-}
-
-.header-1 {
-    margin-top: 5rem;
-    font-weight: 300;
-    letter-spacing: 0.5px;
-}
-
-.header-2 {
-    font-weight: 100;
-    font-size: 16pt;
-    color: var(--foreground-color-2);
-}
-
-.header-3 {
-    font-weight: 600;
-    font-size: 14pt;
-    text-transform: lowercase;
-}
-
-.header-4 {
-    font-weight: 200;
-    font-size: 15pt;
-    border-right: 2px solid var(--foreground-color-3);
-    padding-right: 0.5rem;
-}
-
-.header-5 {
-    font-weight: 400;
-    font-size: 15pt;
-    position: relative;
-}
-
-.header-5::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    right: 0;
-    width: 30px;
-    height: 1px;
-    background: var(--foreground-color-2);
-}
-
-.header-small {
-    font-weight: 300;
-    font-size: 13pt;
-    position: relative;
-    margin-top: 5rem;
-}
-
-.header-small::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    right: 0;
-    width: 25px;
-    height: 1px;
-    background: var(--foreground-color-2);
-}
-
-.header-medium {
     font-weight: 500;
     font-size: 16pt;
     position: relative;
     margin-top: 5rem;
+    margin-bottom: 1rem;
 }
 
-.header-medium::after {
+header::after {
     content: '';
     position: absolute;
     bottom: -2px;
     right: 0;
     width: 35px;
-    height: 1px;
-    background: var(--foreground-color-2);
-}
-
-.header-large {
-    font-weight: 700;
-    font-size: 18pt;
-    position: relative;
-    margin-top: 5rem;
-}
-
-.header-large::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    right: 0;
-    width: 40px;
     height: 1px;
     background: var(--foreground-color-2);
 }
@@ -256,47 +177,12 @@ footer {
     header {
         text-align: left;
         grid-column: 1;
-    }
-    
-    .header-1 {
         margin-top: 2rem;
+        font-size: 18pt;
+        margin-bottom: 0.5rem;
     }
     
-    .header-4 {
-        border-right: none;
-        border-left: 2px solid var(--foreground-color-3);
-        padding-left: 0.5rem;
-        padding-right: 0;
-    }
-    
-    .header-5::after {
-        left: 0;
-        right: auto;
-    }
-    
-    .header-small {
-        margin-top: 2rem;
-    }
-    
-    .header-small::after {
-        left: 0;
-        right: auto;
-    }
-    
-    .header-medium {
-        margin-top: 2rem;
-    }
-    
-    .header-medium::after {
-        left: 0;
-        right: auto;
-    }
-    
-    .header-large {
-        margin-top: 2rem;
-    }
-    
-    .header-large::after {
+    header::after {
         left: 0;
         right: auto;
     }
@@ -304,8 +190,9 @@ footer {
     .label {
         grid-column: 1;
         text-align: left;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0;
         font-weight: 600;
+        font-size: 14pt;
     }
     
     .content {
