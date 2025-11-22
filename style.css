@@ -1,25 +1,23 @@
 @import url('reset.css');
-@import url(https://db.onlinewebfonts.com/c/9731ac6143838c1cff6ea834606c511f?family=Raptor+V2+Premium+Light);
-@import url(https://db.onlinewebfonts.com/c/487e0001960126f2230ecf934038757e?family=Raptor+V2+Premium+Medium);
 
 @font-face {
     font-family: "Raptor V2 Premium Light";
-    src: url("https://db.onlinewebfonts.com/t/27fd1c33aa50353525b6225420982a6f.eot");
-    src: url("https://db.onlinewebfonts.com/t/27fd1c33aa50353525b6225420982a6f.eot?#iefix")format("embedded-opentype"),
-        url("https://db.onlinewebfonts.com/t/27fd1c33aa50353525b6225420982a6f.woff2")format("woff2"),
-        url("https://db.onlinewebfonts.com/t/27fd1c33aa50353525b6225420982a6f.woff")format("woff"),
-        url("https://db.onlinewebfonts.com/t/27fd1c33aa50353525b6225420982a6f.ttf")format("truetype"),
-        url("https://db.onlinewebfonts.com/t/27fd1c33aa50353525b6225420982a6f.svg#Raptor V2 Premium Light")format("svg");
+    src: url("fonts/Raptor V2 Premium Light/Web Fonts/27fd1c33aa50353525b6225420982a6f.eot");
+    src: url("fonts/Raptor V2 Premium Light/Web Fonts/27fd1c33aa50353525b6225420982a6f.eot?#iefix") format("embedded-opentype"),
+        url("fonts/Raptor V2 Premium Light/Web Fonts/27fd1c33aa50353525b6225420982a6f.woff2") format("woff2"),
+        url("fonts/Raptor V2 Premium Light/Web Fonts/27fd1c33aa50353525b6225420982a6f.woff") format("woff"),
+        url("fonts/Raptor V2 Premium Light/Web Fonts/27fd1c33aa50353525b6225420982a6f.ttf") format("truetype"),
+        url("fonts/Raptor V2 Premium Light/Web Fonts/27fd1c33aa50353525b6225420982a6f.svg#Raptor V2 Premium Light") format("svg");
 }
 
 @font-face {
     font-family: "Raptor V2 Premium Medium";
-    src: url("https://db.onlinewebfonts.com/t/487e0001960126f2230ecf934038757e.eot");
-    src: url("https://db.onlinewebfonts.com/t/487e0001960126f2230ecf934038757e.eot?#iefix")format("embedded-opentype"),
-        url("https://db.onlinewebfonts.com/t/487e0001960126f2230ecf934038757e.woff2")format("woff2"),
-        url("https://db.onlinewebfonts.com/t/487e0001960126f2230ecf934038757e.woff")format("woff"),
-        url("https://db.onlinewebfonts.com/t/487e0001960126f2230ecf934038757e.ttf")format("truetype"),
-        url("https://db.onlinewebfonts.com/t/487e0001960126f2230ecf934038757e.svg#Raptor V2 Premium Medium")format("svg");
+    src: url("fonts/Raptor V2 Premium Medium/Web Fonts/487e0001960126f2230ecf934038757e.eot");
+    src: url("fonts/Raptor V2 Premium Medium/Web Fonts/487e0001960126f2230ecf934038757e.eot?#iefix") format("embedded-opentype"),
+        url("fonts/Raptor V2 Premium Medium/Web Fonts/487e0001960126f2230ecf934038757e.woff2") format("woff2"),
+        url("fonts/Raptor V2 Premium Medium/Web Fonts/487e0001960126f2230ecf934038757e.woff") format("woff"),
+        url("fonts/Raptor V2 Premium Medium/Web Fonts/487e0001960126f2230ecf934038757e.ttf") format("truetype"),
+        url("fonts/Raptor V2 Premium Medium/Web Fonts/487e0001960126f2230ecf934038757e.svg#Raptor V2 Premium Medium") format("svg");
 }
 
 html {
