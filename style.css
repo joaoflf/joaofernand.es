@@ -63,6 +63,23 @@ header::after {
     width: 35px;
     height: 1px;
     background: var(--foreground-color-2);
+    transform-origin: center;
+}
+
+@keyframes underline-pulse {
+    0% {
+        transform: scaleX(1);
+    }
+    50% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+header:hover::after {
+    animation: underline-pulse 0.6s ease;
 }
 
 .about,
